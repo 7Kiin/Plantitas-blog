@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Plantitas blog</title>
+    <!------Enlace a CSS------->
+    <link rel="stylesheet" href="../css/style.css">
+    <!------Icono principal------->
+    <link rel="shortcut icon" href="/imagenes/planta-icono.png">
+    <!------Montserrat font------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Font Awesome para los iconos básicos-->
+    <script src="https://kit.fontawesome.com/c4b14aa40f.js" crossorigin="anonymous"></script>
+    <!--Editar formulario de newsletter-->
+    <style>
+        .newsletter{
+            max-width: 1280px;
+            margin: auto;
+            background-color: var(--color3);
+            padding: 20px;
+        }
+        .newsletter label{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--color1);
+        }
+        .newsletter form{
+            background-color: white;
+            width: 70%;
+            box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            padding: 50px 50px;
+            border-radius: 15px;
+        }
+        .newsletter input, button{
+            width: 100%;
+        }
+        .newsletter input{
+            border-radius: 5px;
+            height: 28px;
+            padding: 10px;
+        }
+        .newsletter button:hover{
+            background-color: var(--color5) !important;
+            border-color: var(--color5) !important;
+            color: var(--color1) !important;
+            cursor: pointer;
+        }
+        @media(max-width:700px){
+            .newsletter form{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="blog">
+
+        <!--Loguito del encabezado-->
+        <div class="navigation">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-locust"></i> Plantitas Blog
+            </a>
+
+            <!--Menu del encabezado-->
+            <nav>
+
+                <!--Hamburguesa-->
+                <input type="checkbox" type="text" class="menu-btn" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+
+                <ul class="blog-filter">
+                    <li class="list blog-filter-active" data-filter="all">Todos</li>
+                    <li class="list" data-filter="flores">Flores</li>
+                    <li class="list" data-filter="sombra">De sombra</li>
+                    <li class="list" data-filter="medicinales">Medicinales</li>
+                </ul>
+            </nav>
+            
+        </div>
+
+        <!--------Anuncio-------------->
+        <div class="ad">
+            <a href="https://aterrizatusideas.my.canva.site/portfolio-website-kjpg" target="_blank">
+                <img src="../imagenes/Mira mis otros proyectos.png" alt="ads">
+            </a>
+        </div>
+
+        <!---------Contenedores---------->
+        <div class="blog-container">
+
+            <!------Caja--bugambilias----------->
+            <div class="blog-box flores">
+
+                <!--Imagen-->
+                <div class="blog-img">
+                    <a href="../html/bugambilias.html">
+                        <img src="../imagenes/bugambilia-1.png" alt="bugambilia">
+                    </a>
+                    <span class="category">Flores</span>
+                </div>
+
+                <!--Texto-->
+                <div class="blog-text">
+                    <a href="../html/bugambilias.html">
+                        <h3>Bugambilias</h3>
+                    </a>
+
+                    <!----Fecha----->
+                    <div class="category-time">
+                        <span class="blog-category">Flores</span>
+                        <span class="published-time">1 de diciembre de 2024</span>
+                    </div>
+
+                    <!------Autor------>
+                    <div class="publisher-profile">
+                        <img src="../imagenes/kjpg.jpg" alt="Autor">
+                        <span>Kitzia Pérez</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!------Caja---canela------------------->
+            <div class="blog-box medicinales">
+
+                <!--Imagen-->
+                <div class="blog-img">
+                    <a href="../html/canela.html">
+                        <img src="../imagenes/canela-1.png" alt="canela">
+                    </a>
+                    <span class="category">Medicinales</span>
+                </div>
+
+                <!--Texto-->
+                <div class="blog-text">
+                    <a href="../html/canela.html">
+                        <h3>Canela</h3>
+                    </a>
+
+                    <!----Fecha----->
+                    <div class="category-time">
+                        <span class="blog-category">Medicinales</span>
+                        <span class="published-time">1 de diciembre de 2024</span>
+                    </div>
+
+                    <!------Autor------>
+                    <div class="publisher-profile">
+                        <img src="../imagenes/kjpg.jpg" alt="Autor">
+                        <span>Kitzia Pérez</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!------Caja----dieffenbachia----------------->
+            <div class="blog-box sombra">
+
+                <!--Imagen-->
+                <div class="blog-img">
+                    <a href="../html/dieffenbachia.html">
+                        <img src="../imagenes/dieffenbachia-1.png" alt="dieffenbachia">
+                    </a>
+                    <span class="category">De sombra</span>
+                </div>
+
+                <!--Texto-->
+                <div class="blog-text">
+                    <a href="../html/dieffenbachia.html">
+                        <h3>Dieffenbachia</h3>
+                    </a>
+
+                    <!----Fecha----->
+                    <div class="category-time">
+                        <span class="blog-category">De sombra</span>
+                        <span class="published-time">1 de diciembre de 2024</span>
+                    </div>
+
+                    <!------Autor------>
+                    <div class="publisher-profile">
+                        <img src="../imagenes/kjpg.jpg" alt="Autor">
+                        <span>Kitzia Pérez</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!------Caja---helechos-------------------->
+            <div class="blog-box sombra">
+
+                <!--Imagen-->
+                <div class="blog-img">
+                    <a href="../html/helechos.html">
+                        <img src="../imagenes/helechos-1.png" alt="helechos">
+                    </a>
+                    <span class="category">De sombra</span>
+                </div>
+
+                <!--Texto-->
+                <div class="blog-text">
+                    <a href="../html/helechos.html">
+                        <h3>Helechos</h3>
+                    </a>
+
+                    <!----Fecha----->
+                    <div class="category-time">
+                        <span class="blog-category">De sombra</span>
+                        <span class="published-time">1 de diciembre de 2024</span>
+                    </div>
+
+                    <!------Autor------>
+                    <div class="publisher-profile">
+                        <img src="../imagenes/kjpg.jpg" alt="Autor">
+                        <span>Kitzia Pérez</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!------Caja--margaritas------------------->
+            <div class="blog-box flores">
+
+                <!--Imagen-->
+                <div class="blog-img">
+                    <a href="../html/margaritas.html">
+                        <img src="../imagenes/margarita-1.png" alt="bmargaritas">
+                    </a>
+                    <span class="category">Flores</span>
+                </div>
+
+                <!--Texto-->
+                <div class="blog-text">
+                    <a href="../html/margaritas.html">
+                        <h3>Margaritas</h3>
+                    </a>
+
+                    <!----Fecha----->
+                    <div class="category-time">
+                        <span class="blog-category">Flores</span>
+                        <span class="published-time">1 de diciembre de 2024</span>
+                    </div>
+
+                    <!------Autor------>
+                    <div class="publisher-profile">
+                        <img src="../imagenes/kjpg.jpg" alt="Autor">
+                        <span>Kitzia Pérez</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!------Caja--menta--------------------->
+            <div class="blog-box medicinales">
+
+                <!--Imagen-->
+                <div class="blog-img">
+                    <a href="../html/menta.html">
+                        <img src="../imagenes/menta-1.png" alt="menta">
+                    </a>
+                    <span class="category">Medicinales</span>
+                </div>
+
+                <!--Texto-->
+                <div class="blog-text">
+                    <a href="../html/menta.html">
+                        <h3>Menta</h3>
+                    </a>
+
+                    <!----Fecha----->
+                    <div class="category-time">
+                        <span class="blog-category">Medicinales</span>
+                        <span class="published-time">1 de diciembre de 2024</span>
+                    </div>
+
+                    <!------Autor------>
+                    <div class="publisher-profile">
+                        <img src="../imagenes/kjpg.jpg" alt="Autor">
+                        <span>Kitzia Pérez</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!------Caja--rosas------------------->
+            <div class="blog-box flores">
+
+                <!--Imagen-->
+                <div class="blog-img">
+                    <a href="../html/rosas.html">
+                        <img src="../imagenes/rosas-1.jpg" alt="rosas">
+                    </a>
+                    <span class="category">Flores</span>
+                </div>
+
+                <!--Texto-->
+                <div class="blog-text">
+                    <a href="../html/rosas.html">
+                        <h3>Rosas</h3>
+                    </a>
+
+                    <!----Fecha----->
+                    <div class="category-time">
+                        <span class="blog-category">Flores</span>
+                        <span class="published-time">1 de diciembre de 2024</span>
+                    </div>
+
+                    <!------Autor------>
+                    <div class="publisher-profile">
+                        <img src="../imagenes/kjpg.jpg" alt="Autor">
+                        <span>Kitzia Pérez</span>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div>
+
+        <!----------Newsletter con conexión a base de datos------------>
+        <div class="newsletter">
+            <form action="../php/suscribe.php" method="POST">
+                <label for="email">Suscríbete a nuestro Newsletter para enterarte de las novedades</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" style="font-weight: bold; color: white; background-color: var(--color4); border-color: var(--color4); border-radius: 15px; padding: 5px 20px;">Suscribirse</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!--Pie de página---------------------->
+    <footer>
+        <span class="copyright">
+            <p style="color:black;">Copyright 2024</p>
+        </span>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/kitzia-jpg/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/7Kiin" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!--------JQuery---------->
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    
+    
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
